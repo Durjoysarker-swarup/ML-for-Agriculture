@@ -30,14 +30,6 @@ Comparison of simple vs. complex models reveals how different algorithms capture
 
 ---
 
-## 📊 Files in This Project
-
-- `Heart Disease Prediction.ipynb` — Complete analysis
-- `heart.csv` — Patient clinical data
-- `REPORT.md` — Detailed findings
-
----
-
 ## 🚀 How to Use
 
 1. Open notebook and run sequentially
