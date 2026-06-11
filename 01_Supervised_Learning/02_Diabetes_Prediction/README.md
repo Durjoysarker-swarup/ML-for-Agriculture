@@ -1,4 +1,4 @@
-# Diabetes Prediction
+# Diabetes Prediction (Random Forest Classification)
 
 ## 📋 Quick Overview
 
