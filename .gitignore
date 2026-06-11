@@ -69,6 +69,7 @@ venv.bak/
 *.pth
 
 # Large files
+data/
 data/raw/
 data/processed/
 *.zip
