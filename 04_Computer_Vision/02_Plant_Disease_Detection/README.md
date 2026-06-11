@@ -30,34 +30,6 @@ Potato is a major global crop. Leaf diseases (Early Blight, Late Blight) cause s
 - **Cost savings:** Prevent crop loss
 - **Regional impact:** Especially important in developing countries
 
-**Skills Transfer:**
-Techniques developed here directly apply to:
-- Corn/maize diseases
-- Rice leaf diseases
-- Tomato crop diseases
-- General leaf disease detection
-
----
-
-## 📁 Files in This Project
-
-- `Plant Disease Detection.ipynb` — Complete deep learning analysis
-- `Plant Disease Detection.pdf` — Visual report with disease explanations
-- `potato_leaf_disease_model.keras` — Trained model (ready for deployment)
-- `REPORT.md` — Detailed technical findings
-
----
-
-## 🚀 How to Use
-
-1. Open `Plant Disease Detection.ipynb`
-2. Review CNN architecture designed for leaves
-3. Understand disease classification approach
-4. Analyze model performance per disease
-5. Review deployment considerations
-6. Load `potato_leaf_disease_model.keras` for predictions
-7. Read `REPORT.md` for comprehensive analysis
-
 ---
 
 ## 📊 Key Results
@@ -86,13 +58,11 @@ Techniques developed here directly apply to:
 ### Multi-Class Classification
 - Unlike binary (pneumonia: yes/no)
 - Multiple classes: Healthy, Early Blight, Late Blight
-- Softmax output (probabilities sum to 1)
 - One-hot encoding for labels
 
 ### Leaf-Specific Augmentation
 - Rotation (leaf orientation in photos)
 - Zoom (different distances from camera)
-- Brightness (different sun angles and times)
 - Contrast (different soil backgrounds)
 
 ### Agricultural Deployment
