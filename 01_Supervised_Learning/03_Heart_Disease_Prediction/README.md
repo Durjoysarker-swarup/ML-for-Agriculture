@@ -1,4 +1,5 @@
-# Heart Disease Prediction (Logistic Regression vs Random Forest)
+# Heart Disease Prediction 
+## ML Model: Logistic Regression vs Random Forest
 
 ## 📋 Quick Overview
 
