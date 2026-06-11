@@ -1,4 +1,5 @@
 # Customer Segmentation
+## ML Model: K-Means Clustering
 
 ## 📋 Quick Overview
 
@@ -31,30 +32,12 @@ Customer segmentation enables targeted strategies for different customer groups.
 
 ---
 
-## 📁 Files in This Project
-
-- `Customer Segmentation.ipynb` — Complete clustering analysis
-- `Wholesale customers data.csv` — Customer spending data
-- `REPORT.md` — Detailed findings and cluster profiles
-
----
-
-## 🚀 How to Use
-
-1. Open `Customer Segmentation.ipynb`
-2. Run analysis to determine optimal clusters
-3. Review cluster profiles
-4. Read `REPORT.md` for interpretation
-
----
-
 ## 📈 Key Results
 
 *(See REPORT.md)*
 
 - Optimal number of clusters (Elbow method)
 - Cluster characteristics and profiles
-- Business implications for each segment
 - Visualizations of clusters
 
 ---
