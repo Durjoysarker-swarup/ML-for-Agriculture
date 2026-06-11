@@ -106,9 +106,7 @@ These projects build the **ML foundation** for advanced geospatial work:
 
 ## 📖 How to Navigate
 
-1. **Start with [STRUCTURE.md](STRUCTURE.md)** to understand the organization
 2. **Read [LEARNING_OUTCOMES.md](LEARNING_OUTCOMES.md)** to see what each phase teaches
-3. **Check [AGRICULTURE_CONNECTION.md](AGRICULTURE_CONNECTION.md)** to understand farm relevance
 4. **Explore each project folder** for detailed analysis and code
 
 ---
