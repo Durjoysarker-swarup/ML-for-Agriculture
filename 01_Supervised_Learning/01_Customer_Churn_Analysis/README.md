@@ -1,4 +1,4 @@
-# Customer Churn Analysis
+# Customer Churn Analysis (Logistic Regrassion)
 
 ## 📋 Quick Overview
 
@@ -28,13 +28,6 @@ Understanding churn patterns is critical for any service/business. This project 
 - Identifying at-risk farmers who might abandon climate-smart practices
 - Program effectiveness evaluation
 
----
-
-## 📊 Files in This Project
-
-- `Customer Churn Analysis.ipynb` — Complete Jupyter notebook with code and analysis
-- `Customer-Churn.csv` — Dataset (customer records and churn status)
-- `REPORT.md` — Detailed findings and insights
 
 ---
 
