@@ -1,4 +1,5 @@
-# Diabetes Prediction (Random Forest Classification)
+# Diabetes Prediction 
+## ML Model: Random Forest Classification
 
 ## 📋 Quick Overview
 
