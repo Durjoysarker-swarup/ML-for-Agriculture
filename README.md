@@ -18,7 +18,6 @@ This repository contains machine learning projects organized around **agricultur
 
 ## 🎯 Why This Organization Matters
 
-Scholarship programs (GEM, CDE, MasterGeotech) expect to see:
 
 ✅ **Evidence of systematic learning** — This repo shows structured progression through ML topics  
 ✅ **Agricultural awareness** — Each project links to real farming/environmental challenges  
@@ -102,7 +101,6 @@ These projects build the **ML foundation** for advanced geospatial work:
 - **Crop Recommendation** → Data-driven agricultural decision-making
 - **Climate Impact Analysis** → Understanding environmental factors in agriculture
 
-See [Agri_RS_GIS_Project](https://github.com/Durjoysarker-swarup/Agri_RS_GIS_Project) for integration of satellite data + ML in agricultural research.
 
 ---
 
@@ -115,22 +113,10 @@ See [Agri_RS_GIS_Project](https://github.com/Durjoysarker-swarup/Agri_RS_GIS_Pro
 
 ---
 
-## 🎓 For Scholarship Applications (GEM, CDE, MasterGeotech)
-
-**Use this portfolio to demonstrate:**
-
-✅ Systematic ML knowledge from fundamentals to applications  
-✅ Understanding of ML in agricultural context  
-✅ Ability to report findings professionally  
-✅ Integration pathway: ML fundamentals → Agricultural geospatial research  
-✅ Foundation for graduate-level research in precision agriculture  
-
----
-
 ## 💻 Tools & Technologies
 
 - **Python** (Pandas, NumPy, Scikit-learn)
-- **Deep Learning** (TensorFlow, Keras)
+- **Deep Learning** (Keras)
 - **Visualization** (Matplotlib, Seaborn, Plotly)
 - **Statistics & Modeling** (Scipy, Statsmodels)
 - **Jupyter Notebooks** for interactive learning
@@ -147,16 +133,6 @@ This repository reflects **structured course-based learning** with a focus on:
 
 ---
 
-## 📚 Documentation Files
-
-| File | Purpose |
-|------|----------|
-| [README.md](README.md) | This file — overview |
-| [STRUCTURE.md](STRUCTURE.md) | Detailed folder organization |
-| [LEARNING_OUTCOMES.md](LEARNING_OUTCOMES.md) | What you'll learn |
-| [AGRICULTURE_CONNECTION.md](AGRICULTURE_CONNECTION.md) | Agricultural applications |
-
----
 
 **Last Updated:** June 2026
 
