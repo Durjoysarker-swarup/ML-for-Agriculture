@@ -58,30 +58,20 @@ This project develops and compares classification models to predict heart diseas
 ### A. Model Performance Comparison
 
 **Logistic Regression:**
-- **Accuracy:** ~82%
-- **Precision:** ~81%
-- **Recall:** ~82%
-- **ROC-AUC:** ~0.88
+- **Accuracy:** ~85%
+- **Sensitivity:** ~91%
+- **Specificity:** ~77%
 - **Interpretability:** High (linear relationships)
 
 **Random Forest:**
-- **Accuracy:** ~85%
-- **Precision:** ~86%
-- **Recall:** ~84%
-- **ROC-AUC:** ~0.91
+- **Accuracy:** ~83%
+- **Sensitivity:** ~85%
+- **Specificity:** ~81%
 - **Interpretability:** Moderate (feature importance available)
 
 **Comparison:**
-Random Forest achieves ~3% higher accuracy, suggesting non-linear patterns in data.
-
+Logistic Regression achieves ~2% higher accuracy.
 ### B. Feature Importance Analysis
-
-**Top Predictors (Logistic Regression):**
-1. Chest pain type — Strong indicator of disease
-2. Maximum heart rate achieved
-3. ST depression (ECG measurement)
-4. Age
-5. Serum cholesterol
 
 **Top Predictors (Random Forest):**
 1. ST depression — Most important (non-linear effects)
@@ -90,48 +80,6 @@ Random Forest achieves ~3% higher accuracy, suggesting non-linear patterns in da
 4. Age
 5. Vessels involved in blockage
 
-**Insight:** Different models emphasize different features; Random Forest captures ST depression's complex relationship.
-
-### C. Clinical Patterns
-
-**High-Risk Patients:**
-- Chest pain (typical angina)
-- ST depression on ECG
-- High resting blood pressure
-- Low maximum heart rate
-- Advanced age (> 60)
-
-**Low-Risk Patients:**
-- Asymptomatic or atypical chest pain
-- Normal ST segment on ECG
-- Normal heart rate response to exercise
-- Younger age
-- No family history indicators
-
-### D. Algorithm Insights
-
-**Why Random Forest Performs Better:**
-- Captures non-linear relationships (e.g., ST depression effect varies by age)
-- Reduces overfitting through ensemble averaging
-- Better handles feature interactions
-
-**When Logistic Regression Better:**
-- Simpler to explain to non-technical stakeholders
-- Requires less data for reliable estimates
-- Computationally cheaper
-- Linear assumption valid for many medical relationships
-
----
-
-## Visualizations Generated
-
-1. **Feature Distributions** — By disease status
-2. **Correlation Heatmap** — Feature relationships
-3. **ROC Curves** — Both models compared
-4. **Feature Importance** — Logistic regression coefficients
-5. **Tree-based Feature Importance** — Random forest rankings
-6. **Confusion Matrices** — Both models
-7. **Cross-validation Scores** — Stability assessment
 
 ---
 
@@ -161,63 +109,16 @@ Random Forest achieves ~3% higher accuracy, suggesting non-linear patterns in da
 
 ---
 
-## Recommendations
-
-### 1. For Clinical Use
-- **Primary Tool:** Use random forest for triage (3% better accuracy)
-- **Explanation:** Use logistic regression coefficients to explain findings
-- **Threshold:** Adjust based on treatment benefit vs. risk
-- **Integration:** Combine with other tests for diagnosis
-
-### 2. For Agricultural Applications
-- **Model Selection:** Use random forest for prediction accuracy
-- **Feature Focus:** Identify top 3-5 drivers to explain to farmers
-- **Data Collection:** Prioritize measurement of important features
-- **Hybrid Approach:** Ensemble predictions from multiple models
-- **Validation:** Test recommendations on actual fields
-
----
-
-## Model Limitations
-
-1. **Sample Size:** 303 patients relatively small for deep learning
-2. **Dataset Specific:** Multi-center data; results may vary by region
-3. **Feature Engineering:** Limited exploration of derived features
-4. **Temporal Aspects:** Cross-sectional data; disease progression not captured
-5. **Class Imbalance:** Roughly 50-50 split; easily balanced
-
----
-
-## Next Steps
-
-1. **Gradient Boosting:** XGBoost or LightGBM for even better performance
-2. **Feature Interaction:** Explore engineered features (e.g., age × heart rate)
-3. **Threshold Optimization:** Set based on clinical cost-benefit
-4. **Calibration:** Ensure probability estimates are reliable
-5. **Feature Engineering:** Create domain-relevant derived features
-6. **Explainability:** Use SHAP or LIME for individual predictions
-
----
-
 ## Skills Demonstrated
 
 ✅ Algorithm comparison and evaluation  
 ✅ Logistic regression fundamentals  
 ✅ Random forests and ensemble methods  
 ✅ Feature importance analysis  
-✅ ROC curve interpretation  
 ✅ Cross-validation for model stability  
 ✅ Clinical data understanding  
 ✅ Interpretability vs. accuracy tradeoff  
 ✅ Agricultural model application  
-
----
-
-## References
-
-- Dataset: UCI Machine Learning Repository — Heart Disease
-- Algorithms: Scikit-learn implementations
-- Evaluation: Standard classification metrics
 
 ---
 
