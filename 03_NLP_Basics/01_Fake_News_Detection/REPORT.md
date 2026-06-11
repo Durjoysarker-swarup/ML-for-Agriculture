@@ -23,31 +23,9 @@ This project applies Natural Language Processing (NLP) to classify news articles
 
 ## Methodology
 
-### 1. Data Exploration
-- Article length distributions (real vs. fake)
-- Author patterns
-- Date patterns
-- Vocabulary analysis
 
-### 2. Text Preprocessing Pipeline
 
-**Step 1: Cleaning**
-- Remove special characters
-- Convert to lowercase
-- Remove extra whitespace
-
-**Step 2: Tokenization**
-- Split text into individual words/tokens
-
-**Step 3: Stopwords Removal**
-- Remove common words (the, a, is, etc.) that don't carry meaning
-- Custom removal of domain-specific common words
-
-**Step 4: Stemming/Lemmatization**
-- Reduce words to root form
-- "running", "runs", "run" → "run"
-
-### 3. Feature Extraction: TF-IDF
+### 1. Feature Extraction: TF-IDF
 
 **Term Frequency (TF):**
 - How often a word appears in a document
@@ -69,9 +47,7 @@ This project applies Natural Language Processing (NLP) to classify news articles
 - **Testing:** 20% held-out
 
 ### 5. Evaluation
-- Accuracy, precision, recall, F1-score
-- Confusion matrix
-- Most discriminative words/phrases
+- Accuracy
 
 ---
 
@@ -79,92 +55,10 @@ This project applies Natural Language Processing (NLP) to classify news articles
 
 ### A. Model Performance
 
-**Accuracy:** ~93%
-- Correctly classifies 93 out of 100 articles
+**Accuracy:** ~99%
+- Correctly classifies 99 out of 100 articles
 - Strong performance on both real and fake news
 
-**Precision:** ~94%
-- When we label something "fake", we're right 94% of the time
-- Few false accusations of real news
-
-**Recall:** ~91%
-- We identify 91% of actual fake articles
-- Miss ~9% of fakes (false negatives)
-
-**F1-Score:** ~92%
-- Balanced performance across metrics
-
-### B. Linguistic Patterns
-
-**Words Strongly Associated with FAKE News:**
-1. "Trump" — High frequency in political misinformation
-2. "Clinton" — Political controversy focus
-3. "Obama" — Political opponents
-4. "Says" — Unverified claims
-5. "Report" — Often unsourced
-6. "New" — Sensationalism
-7. "American" — Nationalistic framing
-8. "Police" — Sensational crime stories
-9. "Video" — Often misleading visual framing
-10. "Breaking" — Urgency/sensationalism
-
-**Words Strongly Associated with REAL News:**
-1. "Reuters" — Wire service mention
-2. "Associated Press" — Credible source
-3. "The New York Times" — Established outlet
-4. "Official" — Authoritative statement
-5. "Government" — Institutional reporting
-6. "President" — Formal title usage
-7. "Committee" — Official bodies
-8. "Report" — Published sources
-9. "Statement" — Attributed quotes
-10. "Agency" — Official organizations
-
-### C. Text Characteristics
-
-**Fake News Characteristics:**
-- Sensational headlines (ALL CAPS, multiple punctuation)
-- Emotional language ("shocking", "outrageous", "disgusting")
-- Unattributed claims ("sources say", "allegedly")
-- Political polarization
-- Shorter, punchier sentences
-- Calls to action ("Share if you agree!")
-- Conspiracy language
-
-**Real News Characteristics:**
-- Neutral, factual tone
-- Attribution ("According to...", "The report states...")
-- Context and background
-- Multiple perspectives
-- Measured language
-- Longer, complex sentences
-- Clear sourcing
-
-### D. Misclassified Examples
-
-**Fake News Classified as Real (False Negatives):**
-- Often well-written, plausible-sounding misinformation
-- Uses formal language mimicking real news
-- Cites real sources but misrepresents information
-
-**Real News Classified as Fake (False Positives):
-- Sensational but accurate breaking news
-- Opinion pieces in news outlets
-- Political news with strong language
-
----
-
-## Visualizations Generated
-
-1. **Word Clouds** — Fake vs. real news vocabulary
-2. **Confusion Matrix** — Classification breakdown
-3. **Feature Importance** — Most discriminative words
-4. **ROC Curve** — Model discrimination ability
-5. **Article Length Distribution** — Real vs. fake
-6. **Word Frequency** — Top words in each category
-7. **TF-IDF Heatmap** — Important terms highlighted
-
----
 
 ## Agricultural Connection
 
@@ -240,39 +134,11 @@ This project applies Natural Language Processing (NLP) to classify news articles
 5. **Sophisticated Misinformation:** Well-crafted fakes may fool the model
 6. **Language:** Trained on English; may not transfer to other languages
 
----
-
-## Recommendations
-
-### 1. For General Misinformation Detection
-- Use model as first filter, not final arbiter
-- Combine with manual review of flagged articles
-- Regular retraining as language/tactics evolve
-- Transparency about model limitations
-
-### 2. For Agricultural Applications
-- **Create agricultural dataset:** Train on farm-specific news
-- **Combine signals:** Text + source credibility + expert validation
-- **Farmer training:** Teach recognition of unreliable claims
-- **Extension service:** Provide vetted information sources
-- **Market monitoring:** Detect false price claims early
-
----
-
-## Next Steps
-
-1. **Word Embeddings:** Use Word2Vec/GloVe for semantic understanding
-2. **Deep Learning:** LSTM/CNN for sequence patterns
-3. **Ensemble Methods:** Combine text + metadata (source, author, dates)
-4. **Transfer Learning:** Use pre-trained language models (BERT, GPT)
-5. **Active Learning:** Identify hard cases for manual review
-6. **Domain Adaptation:** Retrain on agricultural news specifically
 
 ---
 
 ## Skills Demonstrated
 
-✅ Text preprocessing (tokenization, stemming, stopwords)  
 ✅ TF-IDF vectorization  
 ✅ NLP pipeline development  
 ✅ Text classification with scikit-learn  
@@ -281,15 +147,6 @@ This project applies Natural Language Processing (NLP) to classify news articles
 ✅ Word frequency and pattern analysis  
 ✅ Misinformation detection concepts  
 ✅ Agricultural information reliability  
-
----
-
-## References
-
-- Dataset: Fake News Detection dataset (Kaggle)
-- TF-IDF: Sparck Jones, K. (1972) — A statistical interpretation of term specificity
-- NLP Best Practices: Bird, S., Klein, E., & Loper, E. (2009) — Natural Language Processing with Python
-- Applications: Misinformation detection, information verification
 
 ---
 
