@@ -66,10 +66,8 @@ Top factors predicting churn:
 5. **Tech support** — Customers without tech support churn more
 
 ### C. Model Performance
-- **Accuracy:** ~80%
-- **Precision:** ~67% (When we predict churn, we're right 67% of the time)
-- **Recall:** ~65% (We identify 65% of actual churners)
-- **ROC-AUC:** ~0.85 (Good discrimination between churners and non-churners)
+- **Accuracy:** ~72%
+- **ROC-AUC:** ~0.83 (Good discrimination between churners and non-churners)
 
 ### D. Insights by Customer Segment
 
@@ -91,11 +89,9 @@ Top factors predicting churn:
 
 1. **Churn Distribution** — Bar plot showing churn vs. retention rates
 2. **Feature Distributions** — Histograms of key variables
-3. **Churn by Contract Type** — Comparison of churn rates across contract types
-4. **Tenure Analysis** — Churn rate vs. customer tenure
-5. **Monthly Charges vs. Churn** — Relationship between billing and churn
-6. **Confusion Matrix** — Model predictions breakdown
-7. **ROC Curve** — Model discrimination visualization
+3. **Monthly Charges vs. Churn** — Relationship between billing and churn
+4. **Confusion Matrix** — Model predictions breakdown
+5. **ROC Curve** — Model discrimination visualization
 
 ---
 
@@ -125,40 +121,6 @@ Top factors predicting churn:
 
 ---
 
-## Recommendations
-
-### 1. For Telecom Business
-- **Target Interventions:** Focus on month-to-month customers in first 3 months
-- **Enhance Tech Support:** Major factor in retention
-- **Pricing Strategy:** Consider discounts for high-monthly-charge customers
-- **Bundling:** Promote multi-service packages (shown to reduce churn)
-
-### 2. For Agricultural Applications
-- **Early Support:** Intensive engagement in first season with new farmers
-- **Long-term Programs:** Shift from month-to-month to season-based or annual commitments
-- **Technical Support:** Provide strong extension support (equivalent to tech support)
-- **Integrated Services:** Bundle crop recommendation, monitoring, and market access
-
----
-
-## Model Limitations
-
-1. **Class Imbalance:** 27% churn rate may affect model performance; consider SMOTE or class weights for improvement
-2. **Temporal Aspects:** Static snapshot; doesn't account for seasonal patterns
-3. **External Factors:** Macroeconomic conditions not captured
-4. **Generalization:** Model trained on specific telecom company; may not transfer to other industries
-
----
-
-## Next Steps
-
-1. **Improved Models:** Test random forest, XGBoost for better performance
-2. **Feature Engineering:** Create interaction terms, temporal features
-3. **Threshold Tuning:** Adjust decision threshold based on business costs
-4. **A/B Testing:** Test retention strategies on identified high-risk customers
-5. **Integration:** Combine with other customer data for deeper insights
-
----
 
 ## Skills Demonstrated
 
@@ -168,16 +130,7 @@ Top factors predicting churn:
 ✅ Logistic regression from first principles  
 ✅ Model evaluation metrics  
 ✅ Interpretation of model results  
-✅ Business insight generation  
 ✅ Agricultural domain mapping  
-
----
-
-## References
-
-- Dataset: Telecom churn dataset (UCI Machine Learning Repository)
-- Techniques: Binary classification, logistic regression
-- Metrics: Standard classification evaluation approaches
 
 ---
 
