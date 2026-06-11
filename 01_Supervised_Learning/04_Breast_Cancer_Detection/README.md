@@ -1,4 +1,4 @@
-# Breast Cancer Detection
+# Breast Cancer Detection (Logistic Regression vs Random Forest vs SVM)
 
 ## 📋 Quick Overview
 
