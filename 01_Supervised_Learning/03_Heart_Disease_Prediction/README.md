@@ -1,4 +1,4 @@
-# Heart Disease Prediction
+# Heart Disease Prediction (Logistic Regression vs Random Forest)
 
 ## 📋 Quick Overview
 
