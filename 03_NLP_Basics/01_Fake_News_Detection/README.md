@@ -1,4 +1,5 @@
 # Fake News Detection
+## ML model: Natural Language Processing
 
 ## 📋 Quick Overview
 
@@ -36,7 +37,6 @@ Misinformation spreads rapidly. Automated detection helps identify unreliable so
 - `Fake News Detector.ipynb` — Complete NLP analysis
 - `Fake.csv` — Fake news articles dataset
 - `True.csv` — Real news articles dataset
-- `PDSML Day-18 👉 TF-IDF Score Python Verification.ipynb` — Supporting analysis
 - `REPORT.md` — Detailed findings
 
 ---
