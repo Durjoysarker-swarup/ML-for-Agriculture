@@ -1,5 +1,5 @@
 # Customer Churn Analysis 
-## ML Model used: Logistic Regrassion
+## ML Model: Logistic Regrassion
 
 ## 📋 Quick Overview
 
