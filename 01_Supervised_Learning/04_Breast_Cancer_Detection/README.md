@@ -9,8 +9,6 @@
 **Skills Demonstrated:**
 - Support Vector Machines basics
 - Kernel selection and hyperparameter tuning
-- Medical image feature analysis
-- ROC-AUC curve interpretation
 - Model evaluation for high-stakes problems
 
 **Dataset:** Wisconsin Breast Cancer Dataset (569 samples, 30 features from cell nuclei)
@@ -30,19 +28,9 @@ SVMs are particularly effective for binary classification in high-dimensional sp
 
 ---
 
-## 📊 Files in This Project
-
-- `Breast Cancer Detection.ipynb` — Complete SVM analysis
-- `breast_cancer_data.csv` — Medical feature data
-- `REPORT.md` — Detailed findings
-
----
-
 ## 🚀 How to Use
 
 1. Open notebook
-2. Explore SVM theory and kernel selection
-3. Review hyperparameter tuning
 4. Analyze model performance
 5. Read REPORT for insights
 
