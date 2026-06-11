@@ -59,12 +59,6 @@ venv.bak/
 *~
 .DS_Store
 
-# Data files (if sensitive)
-*.csv
-*.xlsx
-*.xls
-*.db
-*.sqlite
 
 # Model files
 *.pkl
