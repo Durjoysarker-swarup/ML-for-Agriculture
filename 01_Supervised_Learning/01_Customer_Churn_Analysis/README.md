@@ -60,6 +60,5 @@ Understanding churn patterns is critical for any service/business. This project 
 ## 🔗 Related Projects
 
 - **Phase 1 (Other Classification):** Diabetes Prediction, Heart Disease Prediction
-- **Phase 3 (Agriculture):** Farmer typology and segmentation
 
 ---
