@@ -46,9 +46,9 @@ This project applies Support Vector Machines (SVM) to classify breast tumors as 
 ### B. Model Performance
 
 **Accuracy:** 
-1. Logistic Regression: 97
-2. SVM: 95
-3. Random Forest: 96
+1. Logistic Regression: 97%
+2. SVM: 95%
+3. Random Forest: 96%
 
 
 ## Agricultural Connection
