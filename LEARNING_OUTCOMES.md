@@ -1,7 +1,5 @@
 # Learning Outcomes
 
-## What You'll Master in Each Phase
-
 ---
 
 ## Phase 1: ML Fundamentals
@@ -9,20 +7,18 @@
 ### Supervised Learning Projects
 
 #### Customer Churn Analysis
-**You will learn:**
 - Data exploration and visualization with Pandas
 - Handling imbalanced datasets
 - Logistic regression fundamentals
 - Feature scaling and normalization
 - Model interpretation (which factors drive churn)
-- Binary classification workflow
+- ROC curve and interpretation 
 
 **Why it matters:** Foundational workflow for any classification problem
 
 ---
 
 #### Diabetes Prediction
-**You will learn:**
 - Feature selection techniques
 - Sensitivity & specificity (not just accuracy)
 - Clinical implications of classification errors
@@ -35,7 +31,6 @@
 ---
 
 #### Heart Disease Prediction
-**You will learn:**
 - Logistic regression vs. Random Forest comparison
 - Feature importance and model interpretation
 - Multiple evaluation metrics (precision, recall, F1)
@@ -47,7 +42,6 @@
 ---
 
 #### Breast Cancer Detection
-**You will learn:**
 - Support Vector Machines (SVM) theory and practice
 - Kernel selection and hyperparameter tuning
 - ROC-AUC curve interpretation
@@ -61,7 +55,6 @@
 ### Unsupervised Learning Projects
 
 #### Customer Segmentation
-**You will learn:**
 - Determining optimal number of clusters (Elbow method)
 - K-Means algorithm and its limitations
 - Cluster interpretation and business actionability
@@ -75,7 +68,6 @@
 ### NLP Projects
 
 #### Fake News Detection
-**You will learn:**
 - Text preprocessing (tokenization, stopwords, stemming)
 - TF-IDF vectorization concepts
 - Text classification pipeline
@@ -91,7 +83,6 @@
 ### Computer Vision
 
 #### Medical Image Classification (Pneumonia Detection)
-**You will learn:**
 - Convolutional Neural Networks (CNN) architecture
 - Image preprocessing and augmentation
 - Transfer learning using pre-trained models (ResNet, EfficientNet)
@@ -104,7 +95,6 @@
 ---
 
 #### Plant Disease Detection
-**You will learn:**
 - Image classification for agriculture
 - Handling limited training data (augmentation strategies)
 - Deploying ML models in production
@@ -118,7 +108,6 @@
 ### Time Series & Forecasting
 
 #### Rainfall Forecasting
-**You will learn:**
 - Time series decomposition (trend, seasonality)
 - Temporal feature engineering
 - Regression for continuous forecasting
@@ -131,7 +120,6 @@
 ---
 
 #### Climate Impact on Agriculture
-**You will learn:**
 - Correlation and causality distinction
 - Lagged variable relationships
 - Multi-variable time series analysis
@@ -145,7 +133,6 @@
 ## Phase 3: Agricultural ML Integration
 
 ### Crop Yield Prediction
-**You will learn:**
 - Integrating multiple data types (weather, soil, management)
 - Feature engineering for agricultural systems
 - Handling missing historical data
@@ -158,7 +145,6 @@
 ---
 
 ### Crop Recommendation System
-**You will learn:**
 - Multi-input classification (soil properties → crop suitability)
 - Decision boundaries and model decisions
 - Agricultural domain knowledge integration
@@ -233,33 +219,7 @@ After completing this portfolio, you're ready for:
 
 ✅ **Agri_RS_GIS_Project** — Combining satellite data + geospatial ML  
 ✅ **Precision Agriculture** — Farm-scale decision support  
-✅ **Climate Adaptation** — Agricultural resilience modeling  
 ✅ **Research** — Publication-ready geospatial agriculture work  
-✅ **Graduate Programs** — GEM, CDE, MasterGeotech readiness  
 
----
-
-## Self-Assessment Checklist
-
-### After Phase 1, You Should Be Able To:
-- [ ] Load and explore data with Pandas
-- [ ] Visualize data patterns
-- [ ] Build and evaluate classification models
-- [ ] Understand supervised vs. unsupervised learning
-- [ ] Interpret model outputs
-
-### After Phase 2, You Should Be Able To:
-- [ ] Build neural networks
-- [ ] Apply transfer learning
-- [ ] Analyze time series data
-- [ ] Make forecasts
-- [ ] Extract temporal patterns
-
-### After Phase 3, You Should Be Able To:
-- [ ] Apply ML to agricultural problems
-- [ ] Design recommendation systems
-- [ ] Link climate to agricultural outcomes
-- [ ] Predict crop yields
-- [ ] Write professional technical reports
 
 ---
