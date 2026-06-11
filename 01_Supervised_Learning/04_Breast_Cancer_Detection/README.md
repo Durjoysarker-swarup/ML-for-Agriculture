@@ -1,4 +1,5 @@
-# Breast Cancer Detection (Logistic Regression vs Random Forest vs SVM)
+# Breast Cancer Detection 
+## ML Model: Logistic Regression vs Random Forest vs SVM
 
 ## 📋 Quick Overview
 
