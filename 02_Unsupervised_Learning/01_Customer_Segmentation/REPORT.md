@@ -10,8 +10,6 @@ This project applies unsupervised learning to identify natural customer groups f
 
 **Objective:** Discover natural customer groups based on spending across product categories
 
-**Business Impact:** Different segments require different marketing strategies and resource allocation
-
 **Dataset:** Wholesale Customers Dataset
 - 440 customers
 - 8 features: spending on Fresh, Milk, Grocery, Frozen, Detergents, Delicatessen, and customer type indicators
@@ -90,15 +88,7 @@ This project applies unsupervised learning to identify natural customer groups f
 - Likely: General grocery stores, supermarkets
 - **Strategy:** Cross-category promotions, loyalty programs
 
-### C. Cluster Characteristics
 
-| Metric | Cluster 1 | Cluster 2 | Cluster 3 | Cluster 4 |
-|--------|----------|----------|----------|----------|
-| **Size** | 25% | 40% | 15% | 20% |
-| **Avg Spending** | High | Low | Moderate | Moderate |
-| **Fresh Focus** | Moderate | Low | Very High | Moderate |
-| **Grocery Focus** | High | Low | Very Low | Moderate |
-| **Customer Type** | Premium | Budget | Specialty | General |
 
 ### D. Business Insights
 
@@ -128,7 +118,6 @@ This project applies unsupervised learning to identify natural customer groups f
 4. **Cluster Centers** — Mean feature values per cluster
 5. **Scatter Plots** — Clusters in 2D (PCA reduced)
 6. **Box Plots** — Feature distributions per cluster
-7. **Heatmap** — Normalized cluster profiles
 
 ---
 
@@ -190,27 +179,6 @@ This project applies unsupervised learning to identify natural customer groups f
 
 ---
 
-## Model Limitations
-
-1. **Distance Metric:** K-Means uses Euclidean distance; may not capture all patterns
-2. **Spherical Assumption:** Assumes clusters are roughly spherical; may not hold
-3. **Optimal k:** Elbow method is heuristic; borderline between k=3 and k=4
-4. **Random Initialization:** Multiple runs needed for stability
-5. **Scaling Sensitivity:** Results depend critically on feature scaling
-
----
-
-## Next Steps
-
-1. **Alternative Methods:** Try DBSCAN, hierarchical clustering for comparison
-2. **Feature Engineering:** Create derived features (e.g., "Fresh as % of total")
-3. **Temporal Analysis:** Track cluster membership over time
-4. **Actionable Insights:** Design specific interventions per cluster
-5. **Validation:** Test strategies on actual customer groups
-6. **Combination:** Use clustering + supervised learning together
-
----
-
 ## Skills Demonstrated
 
 ✅ Unsupervised learning fundamentals  
@@ -219,17 +187,7 @@ This project applies unsupervised learning to identify natural customer groups f
 ✅ Feature scaling for distance-based methods  
 ✅ Cluster profiling and interpretation  
 ✅ Multi-dimensional data visualization  
-✅ Business interpretation of statistical results  
 ✅ Agricultural segmentation strategy  
-
----
-
-## References
-
-- Dataset: UCI Machine Learning Repository — Wholesale Customers
-- Algorithm: MacQueen, J. (1967) — K-Means clustering
-- Evaluation: Rousseeuw, P.J. (1987) — Silhouette coefficient
-- Application: Marketing and agricultural extension strategies
 
 ---
 
