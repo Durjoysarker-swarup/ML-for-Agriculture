@@ -1,4 +1,5 @@
 # Medical Image Classification for Pneumonia Detection
+## ML Model: CNN
 
 ## 📋 Quick Overview
 
@@ -9,10 +10,7 @@
 **Skills Demonstrated:**
 - Convolutional Neural Networks (CNN) fundamentals
 - Image preprocessing and augmentation
-- Transfer learning using pre-trained models (ResNet, EfficientNet)
-- Grad-CAM for model interpretability
 - Addressing overfitting in deep learning
-- Fine-tuning strategies
 
 **Dataset:** Chest X-Ray Images (5,863 images, binary: Normal/Pneumonia)
 
@@ -38,7 +36,6 @@ Image classification requires learning complex visual features. Deep learning au
 
 - ` Image Classification.ipynb` — Complete CNN analysis
 - `REPORT.md` — Detailed findings and technical explanation
-- Supporting files: Model architecture, training history, predictions
 
 ---
 
@@ -58,20 +55,10 @@ Image classification requires learning complex visual features. Deep learning au
 *(See REPORT.md for detailed analysis)*
 
 - CNN architecture and design rationale
-- Transfer learning performance improvement
 - Model accuracy on pneumonia detection
-- Grad-CAM visualization of decision regions
-- Comparison with radiologist performance
 
 ---
 
-## 🔗 Related Projects
-
-- **Phase 2 (Next):** Plant Disease Detection (agricultural application)
-- **Phase 1:** Breast Cancer Detection (medical imaging foundation)
-- **Phase 3:** Computer vision for crop analysis
-
----
 
 ## 💡 Key Concepts
 
