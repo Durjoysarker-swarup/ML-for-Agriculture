@@ -117,42 +117,14 @@ This project develops a multi-class image classifier to detect potato leaf disea
 
 **Data Augmentation (Critical with limited data):**
 - **Rotation:** ±20 degrees (leaf orientation in photos)
-- **Horizontal Flip:** Camera angle variation
 - **Vertical Flip:** Leaf can be photo'd from different sides
-- **Zoom:** 0.8-1.2× (different distances from camera)
-- **Brightness:** ±15% (different lighting conditions)
-- **Contrast:** ±15% (soil background variation)
+- **Zoom:** .2 (different distances from camera)
 - **Shear:** Simulate perspective changes
 
 **Effect:** 3,000 images → 30,000+ unique variants through augmentation
 
-**Train-Validation-Test Split:**
-- Training: 70%
-- Validation: 15% (no augmentation, evaluate on realistic data)
-- Test: 15% (final evaluation)
-- Stratified to maintain class balance
 
-### 3. Architecture Design
-
-**Backbone:** Pre-trained EfficientNet or ResNet50
-- Pre-trained on ImageNet (1M+ general images)
-- Leaf features partially learned
-- Transfer learning reduces training time and data needs
-
-**Custom Head:**
-```
-Pre-trained backbone
-     ↓
-Global Average Pooling (reduce spatial dims)
-     ↓
-Dense(512, ReLU) + Dropout(0.3)
-     ↓
-Dense(256, ReLU) + Dropout(0.2)
-     ↓
-Dense(3, Softmax) [Healthy, Early Blight, Late Blight]
-```
-
-### 4. Training Configuration
+### 3. Training Configuration
 
 **Optimizer:** Adam
 - Adaptive learning rate
@@ -185,140 +157,8 @@ Dense(3, Softmax) [Healthy, Early Blight, Late Blight]
 
 ### 5. Model Evaluation
 
-**Overall Metrics:**
-- **Accuracy:** % of leaves correctly classified
-- **Weighted F1:** Accounts for class imbalance
+**PLoting the Learning Curve**
 
-**Per-Class Metrics:**
-- **Class 1 (Healthy):**
-  - Precision: Healthy leaves incorrectly flagged as diseased?
-  - Recall: All truly healthy leaves identified?
-
-- **Class 2 (Early Blight):**
-  - Precision: False alarms on early blight?
-  - Recall: Catch all early blight before it spreads?
-
-- **Class 3 (Late Blight):**
-  - Precision: Avoid false late blight alarms (expensive treatment)
-  - Recall: Crucial—must catch late blight (destructive)
-
-### 6. Deployment Considerations
-
-**Mobile Deployment:**
-- Convert `.keras` → TensorFlow Lite
-- Compress model (quantization) for phone storage
-- Inference time: <1 second on modern phones
-- No internet required (privacy, reliability)
-
-**User Interface:**
-- Camera capture of leaf
-- Display probabilities for each class
-- Show confidence level
-- Recommend action based on classification
-
-**Robustness Requirements:**
-- Works under variable lighting
-- Handles different leaf backgrounds
-- Robust to leaf damage/stress
-- Performs on different potato varieties
-
----
-
-## Key Findings
-
-### A. Model Performance
-
-**Overall Accuracy:** ~95%
-- Correctly classifies 95 out of 100 leaf photos
-- Strong performance across conditions
-
-**Per-Class Performance:**
-
-| Class | Precision | Recall | F1-Score |
-|-------|-----------|--------|----------|
-| **Healthy** | 96% | 94% | 95% |
-| **Early Blight** | 92% | 96% | 94% |
-| **Late Blight** | 95% | 97% | 96% |
-
-**Interpretation:**
-- Very high recall on Late Blight (97%) — catches almost all cases
-- Balanced precision — few false alarms
-- Early Blight slightly lower precision but still good
-
-### B. Confusion Matrix Analysis
-
-**Healthy Leaves:**
-- Correctly identified: 94%
-- Misclassified as Early Blight: 4%
-- Misclassified as Late Blight: 2%
-- **Note:** Conservative (tends to flag some healthy as diseased)
-- **Agricultural impact:** Better safe than sorry (prevents disease spread)
-
-**Early Blight Leaves:**
-- Correctly identified: 96%
-- Confused with Late Blight: 3%
-- Missed as healthy: 1%
-- **Note:** Good discrimination from late blight (different treatment)
-
-**Late Blight Leaves:**
-- Correctly identified: 97%
-- Confused with Early Blight: 2%
-- Missed as healthy: 1%
-- **Note:** Highest recall (critical for this most destructive disease)
-
-### C. Feature Learning
-
-**What the Model Learned:**
-- **Early Blight detector:** Concentric ring patterns, small brown spots
-- **Late Blight detector:** Water-soaked appearance, white sporulation, rapid expansion
-- **Healthy detector:** Absence of visible lesions, uniform coloration
-
-**Grad-CAM Visualization (Decision Regions):**
-- Early Blight: Focuses on circular lesion centers and rings
-- Late Blight: Highlights edge patterns and irregular borders
-- Healthy: Distributed attention on general leaf texture
-
-### D. Real-World Performance Considerations
-
-**Field Conditions Tested:**
-- Different lighting (morning, afternoon, overcast)
-- Varying leaf ages (young to mature)
-- Different potato varieties (4 major varieties tested)
-- Various backgrounds (soil, plants, hands)
-- Leaf damage (insect feeding, rain damage)
-
-**Performance Degradation:**
-- Optimal conditions: 95% accuracy
-- Challenging conditions: 88-90% accuracy
-- Model robust enough for field use
-
-### E. User Adoption Considerations
-
-**What Farmers Want:**
-- Fast result (< 5 seconds) ✓
-- Confidence score (helps decision-making) ✓
-- Treatment recommendation ✓
-- Why the diagnosis (educational) ✓
-
-**What We Can't Do:**
-- Distinguish similar bacterial/fungal diseases (requires multiple tools)
-- Predict disease progression (requires temporal data)
-- Adjust for variety-specific susceptibility (generic model)
-
----
-
-## Visualizations Generated
-
-1. **Training History** — Accuracy and loss by epoch
-2. **Confusion Matrix** — Classification breakdown
-3. **Per-Class Metrics** — Precision/recall/F1 comparison
-4. **Sample Predictions** — Correct classifications with confidence
-5. **Misclassifications** — Difficult cases for learning
-6. **Grad-CAM Heatmaps** — Decision region visualization
-7. **Disease Progression** — Visual guide to disease stages
-8. **Feature Importance** — Which image regions matter most
-
----
 
 ## Agricultural Implementation Strategy
 
@@ -387,60 +227,6 @@ Features learned on potato leaves partially transfer to other crops:
 
 ---
 
-## Model Limitations
-
-1. **Variety Specificity:**
-   - Trained on certain potato varieties
-   - May not generalize to all varieties
-   - Disease susceptibility varies by variety
-
-2. **Environmental Factors Not Captured:**
-   - Image shows leaf, not growing conditions
-   - Can't determine if disease is progressing
-   - Needs time-series data for prediction
-
-3. **Similar Diseases Not Distinguished:**
-   - Different fungal diseases have similar appearance
-   - Bacterial diseases look different
-   - Nutritional deficiencies can mimic diseases
-
-4. **Severely Damaged Leaves:**
-   - If >80% of leaf destroyed, hard to classify
-   - Model trained on clearly visible lesions
-
-5. **Mobile Deployment Challenges:**
-   - Phone cameras vary in quality
-   - Different operating systems
-   - Requires app development and distribution
-
----
-
-## Field Validation Results
-
-**Pilot Study (100 farmers, 500 leaf photos):**
-- Model accuracy: 94%
-- Farmer adoption: 78% continued use
-- Treatment decisions changed: 45% of cases
-- Farmers' confidence: 82% ("tool is trustworthy")
-- Recommended changes: Clearer disease images, treatment steps
-
----
-
-## Next Steps
-
-1. **Data Collection:** Gather disease images from more varieties and regions
-2. **Model Updates:** Retrain quarterly with new farmer-collected data
-3. **App Development:** Create iOS/Android app with offline capability
-4. **Expert Integration:** Link to extension officer for complex cases
-5. **Multi-Crop:** Extend to other important crops
-6. **Prediction:** Add temporal component ("Will disease spread?")
-7. **Treatment Outcome Tracking:** Validate that recommendations work
-8. **Fungicide Recommendations:** Link to available products and costs
-9. **Regional Adaptation:** Disease risk maps based on climate
-10. **Research Partnership:** Validate against lab-confirmed diagnoses
-
----
-
 ## Skills Demonstrated
 
 ✅ Multi-class image classification  
@@ -454,18 +240,6 @@ Features learned on potato leaves partially transfer to other crops:
 ✅ Real-world deployment considerations  
 ✅ Agricultural domain knowledge integration  
 ✅ Farmer-centric tool design  
-✅ Extension service workflow integration  
-
----
-
-## References
-
-- **Disease Information:** International Potato Center (CIP) disease guides
-- **Dataset:** PlantVillage dataset (publicly available potato leaf disease images)
-- **Methods:** Howard et al. (2017) — Plant Disease Detection in Images
-- **Transfer Learning:** Chowdhury et al. (2021) — Transfer Learning for Plant Disease Detection
-- **Mobile Deployment:** TensorFlow Lite documentation
-- **Agricultural Context:** FAO crop loss estimates, CIP research
 
 ---
 
