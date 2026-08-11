@@ -69,7 +69,6 @@ The 22 crop classes are:
 Crop-Recommendation/
 │
 ├── Crop_Recommendation.ipynb        # Main analysis & modeling notebook
-├── crop_recommendation.pdf          # PDF export of the notebook
 ├── README.md                        # Project documentation (this file)
 │
 └── data/
