@@ -7,8 +7,8 @@ A time series analysis exploring the relationship between crop yield, average te
 ```
 .
 ├── README.md
-├── report.md              # (to be added)
-├── data/                   # (to be added) contains time_series_data.csv
+├── report.md              
+├── data/                  
 └── Time_Series_Analysis.ipynb
 ```
 
