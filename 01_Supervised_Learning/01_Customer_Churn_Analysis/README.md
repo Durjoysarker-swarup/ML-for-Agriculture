@@ -35,7 +35,7 @@ Understanding churn patterns is critical for any service/business. This project 
 ## 🚀 How to Use
 
 1. Open `Customer Churn Analysis.ipynb` in Jupyter Notebook
-2. Run cells sequentially
+2. Run the notebook sequentially from the directory where the .ipynb file is located.
 3. Review visualizations and model results
 4. Read `REPORT.md` for summary of findings
 
