@@ -35,8 +35,7 @@ Misinformation spreads rapidly. Automated detection helps identify unreliable so
 ## 📁 Files in This Project
 
 - `Fake News Detector.ipynb` — Complete NLP analysis
-- `Fake.csv` — Fake news articles dataset
-- `True.csv` — Real news articles dataset
+- `dataset link.txt` - To download the dataset
 - `REPORT.md` — Detailed findings
 
 ---
@@ -44,10 +43,11 @@ Misinformation spreads rapidly. Automated detection helps identify unreliable so
 ## 🚀 How to Use
 
 1. Open `Fake News Detector.ipynb`
-2. Review text preprocessing steps
-3. Understand TF-IDF vectorization
-4. Analyze classification results
-5. Read `REPORT.md` for insights
+2. Download the 2 files and move to the data folder.
+3. Review text preprocessing steps
+4. Understand TF-IDF vectorization
+5. Analyze classification results
+6. Read `REPORT.md` for insights
 
 ---
 
