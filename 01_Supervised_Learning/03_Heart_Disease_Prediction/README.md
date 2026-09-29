@@ -33,7 +33,7 @@ Comparison of simple vs. complex models reveals how different algorithms capture
 
 ## 🚀 How to Use
 
-1. Open notebook and run sequentially
+1. Open notebook and run sequentially from the directory where the .ipynb file is located.
 2. Compare model performances
 3. Analyze feature importance from each algorithm
 4. Read REPORT for insights
