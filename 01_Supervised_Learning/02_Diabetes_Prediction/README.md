@@ -42,7 +42,7 @@ Predicting disease risk from clinical measurements teaches careful evaluation of
 ## 🚀 How to Use
 
 1. Open `Diabetes Prediction.ipynb`
-2. Run analysis sequentially
+2. Run the notebook sequentially from the directory where the .ipynb file is located.
 3. Review sensitivity/specificity tradeoffs
 4. Read `REPORT.md` for medical implications
 
