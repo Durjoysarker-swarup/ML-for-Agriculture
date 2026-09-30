@@ -39,7 +39,6 @@ Repository structure
 - 04_Computer_Vision/ — image analysis, detection, segmentation
 - 05_Time_Series_&_Forecasting/ — forecasting and monitoring
 - 06_Agricultural_ML / — end-to-end project case studies
-- tools/ — scripts to help reviewers and maintainers (check readmes, inject notebook headers)
 - .github/ — issue and PR templates
 
 Reproducibility & evaluation
